@@ -3,10 +3,12 @@ const SHA256 = require('crypto-js/sha256');
 
 const ec = new EC('secp256k1');
 
-const privateKey = 'a62a36fdeebbe9befdbeb3111d526c9aa2fbb048e1601330e71b65659d3a31b8';
+// TODO: fill in your hex private key
+const privateKey = "";
 
 const key = ec.keyFromPrivate(privateKey);
 
+// TODO: change this message to whatever you would like to sign
 const message = "I am in the ChainShot Bootcamp";
 
 const msgHash = SHA256(message);
